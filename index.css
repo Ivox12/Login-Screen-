@@ -7,6 +7,12 @@ body{
     align-items: center;
 }
 
+@media ( max-width: 800px ){
+    .square { 
+        height: 40% ;
+    }
+}
+
 .square {
     background-color: rgba(41, 41, 41, 0);
     text-align: center;
