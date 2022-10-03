@@ -1,0 +1,191 @@
+
+body{
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media ( max-width: 850px ){
+    .square { 
+        height: 100% ;
+    }
+}
+
+.square {
+    background-color: rgba(41, 41, 41, 0);
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 5%;  
+    border-radius: 2%;
+    width: 25%;
+    max-width: 15%;
+    box-shadow: 10px 8px 40px 8px rgb(0, 0, 0);
+    position: absolute;
+    top: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.banner {
+    padding-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 4%;
+    color: rgb(23, 164, 211);
+    font-size: 25px;
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+}
+
+.pass_camp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    position: absolute;
+}
+.pass_camp > input {
+    float: left;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.699);
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.pass_camp >input:focus {
+    background-color: #97909046;
+}
+
+.pass_camp > p {
+    float: left;
+    color: rgba(8, 178, 245, 0.644);
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+}
+
+.log_camp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.log_camp > p {
+    float: left;
+    color: rgba(8, 178, 245, 0.644);
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+
+}
+
+.log_camp > input {
+    float: left;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.699);
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.log_camp >input:focus {
+    background-color: #97909046;
+}
+
+.sub_camp {
+    display: inline;
+}
+
+.sub_camp a{
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.925);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub_camp a:hover{
+    color: grey;
+}
+
+.sub_camp a:active{
+    color: white;
+}
+
+.sub_camp a:visited{
+    color: lightblue;
+}
+
+.sub_camp > input {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    text-shadow: 0 0 0 1em rgb(62, 66, 73), 0 0 0.2em rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    box-shadow: 0px 0px 2px 2px rgb(41, 39, 39);
+    margin-top: 50%;
+    padding: 8px 40px 8px 40px;
+    margin-bottom: 15%;
+}
+
+.sub_camp > input:hover {
+    background-color: rgb(63, 65, 70);
+    color: black;
+}
+
+.sub_camp > input:active{
+    color: white;
+} 
+
+.email_camp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.email_camp > p {
+    float: left;
+    color: rgba(8, 178, 245, 0.644);
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+
+}
+
+.email_camp > input {
+    float: left;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.699);
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.email_camp >input:focus {
+    background-color: #97909046;
+}
+
+.tel_camp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tel_camp > p {
+    float: left;
+    color: rgba(8, 178, 245, 0.644);
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+
+}
+
+.tel_camp > input {
+    float: left;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.699);
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.tel_camp >input:focus {
+    background-color: #97909046;
+}
