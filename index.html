@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Login Screen template</title>
 </header>
 <body>
@@ -16,14 +17,14 @@
         </div>
         <div class="log_camp">
             <p>Login</p>
-            <input class="campo_login" placeholder="Username">
+            <input type="text" placeholder="Username" id="login">
         </div>
         <div class="pass_camp">
             <p>Password</p>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" id="password">
         </div>
         <div class="sub_camp">
-            <input type="submit" value="Enter">
+            <input type="submit" value="Enter" onclick="validatepass()">
             <a href="register.html">Registre-se</a>
         </div>
     </div>
