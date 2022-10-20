@@ -9,7 +9,7 @@ function validatepass() {
     if (password.value.length < 8)
         alert('Minimo 8 Digitos')
     else
-
+        alert('Deu 8 digitos')
     if (password.value.match(especial))
         alert('deu especial')
     else
