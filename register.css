@@ -29,6 +29,7 @@ body{
     
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -42,6 +43,22 @@ body{
     font-size: 25px;
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
 }
+#pass_campo {
+    display: none;
+    color: white;
+    border: 1px solid white;
+    text-align: left;
+}
+
+
+
+.position_lab > label {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 10%
+}
+
 
 .pass_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

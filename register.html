@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
+    <script src="index.js"></script>
     <title>Registro</title>
 </head>
 <body>
@@ -26,7 +27,8 @@
         </div>
         <div class="pass_camp">
             <p>Senha</p>
-            <input type="password" placeholder="pass" >
+            <input type="password" placeholder="pass" id="password" oninput="validatepass()">
+            <div id="pass_campo"></div>
         </div>
         <div class="confirm_camp">
             <p>Confirme a Senha</p>
