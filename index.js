@@ -2,6 +2,7 @@
 function validatepass() {
     let password = document.getElementById("password")
     let pass_camp = document.getElementById("pass_campo")
+    let body = document.getElementsByTagName("body")
     let numeros = /([0-9])/;
     let alfabeto = /([a-z])/;
     let alfabetoA = /([A-Z])/;
@@ -12,27 +13,27 @@ function validatepass() {
     pass_camp.innerHTML = `
     <div class="position_lab">
         <label>Minimo Oito Caracteres
-            <input id="tamanho" type="checkbox" disabled/>
+            <input class="mycheckbox" id="tamanho" type="checkbox" disabled/>
         </label>
     </div>
     <div class="position_lab">
-        <label>Um (~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<) Caractere especial
-            <input id="especial" type="checkbox" disabled/>
+        <label>Um Caractere especial <br>(~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<)</br>
+            <input class="mycheckbox" id="especial" type="checkbox" disabled/>
         </label>
     </div>
     <div class="position_lab">
         <label>Um numero
-            <input id="numero" type="checkbox" disabled/>
+            <input class="mycheckbox" id="numero" type="checkbox" disabled/>
         </label>
     </div>
     <div class="position_lab">
         <label>Uma letra Minuscula
-            <input id="minuscula" type="checkbox" disabled/>
+            <input class="mycheckbox" id="minuscula" type="checkbox" disabled/>
         </label>
     </div>
     <div class="position_lab">
         <label>Uma letra Maiuscula
-            <input id="maiuscula" type="checkbox" disabled/>
+            <input class="mycheckbox" id="maiuscula" type="checkbox" disabled/>
         </label>
     </div>
     `

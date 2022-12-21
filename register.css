@@ -3,7 +3,7 @@ body{
     background-color: rgba(0, 0, 0, 0.89);
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 3%;
 
 }
 
@@ -20,7 +20,8 @@ body{
     border-radius: 2%;
     width: 40%;
     max-width: 400px;
-    max-height: 60%;
+    min-width: 350px;
+    max-height: 50%;
     box-shadow: 10px 8px 40px 8px rgb(0, 0, 0);
     overflow: hidden;
 }
@@ -45,24 +46,58 @@ body{
 }
 #pass_campo {
     display: none;
-    color: white;
-    border: 1px solid white;
+    color: rgba(8, 178, 245, 0.644);
+    text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.3em rgb(144, 148, 156);
+    border: 1px solid rgba(8, 178, 245, 0.644);
+    box-shadow: 1px 1px 8px 1px rgba(8, 178, 245, 0.644);
+    border-radius: 2%;
     text-align: left;
+    max-width: 350px;
+    padding: 5%;
+    margin-top: 5%;
+    width: 80%;
 }
 
+input[type='checkbox'] {
+    appearance: none;
+    display: grid;
+    place-content: center;
+    margin-right: 3%;
+}
 
+input[type='checkbox']::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    border: 2px solid #fd3f3f86;
+    background-color: #fd3f3f3d;
+    content:'';
+    appearance: none;
+    display: inline-block;
+    position: relative;
+
+}
+input[type='checkbox']:checked:before {
+
+    background-color: #3ffd6e62;
+    border: 2px solid #3ffd6eb2;
+}
+
+.position_lab {
+    margin-bottom: 3%;
+}
 
 .position_lab > label {
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
-    margin-left: 10%
+    margin-left: 5%;
 }
 
 
 .pass_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
+
 }
 .pass_camp > input {
     float: left;
@@ -71,6 +106,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .pass_camp >input:focus {
@@ -81,6 +117,7 @@ body{
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 45%;
 }
 
 .confirm_camp {
@@ -94,6 +131,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .confirm_camp >input:focus {
@@ -104,17 +142,18 @@ body{
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 25%;
 }
 
 .log_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
 }
 
 .log_camp > p {
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 45%;
 
 }
 
@@ -125,6 +164,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .log_camp >input:focus {
@@ -172,14 +212,15 @@ body{
 } 
 
 .email_camp {
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
 }
 
 .email_camp > p {
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 45%;
 
 }
 
@@ -190,6 +231,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .email_camp >input:focus {
@@ -198,13 +240,13 @@ body{
 
 .tel_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
 }
 
 .tel_camp > p {
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 40%;
 
 }
 
@@ -215,6 +257,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .tel_camp >input:focus {
