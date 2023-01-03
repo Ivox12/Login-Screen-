@@ -2,7 +2,6 @@
 function validatepass() {
     let password = document.getElementById("password")
     let pass_camp = document.getElementById("pass_campo")
-    let body = document.getElementsByTagName("body")
     let numeros = /([0-9])/;
     let alfabeto = /([a-z])/;
     let alfabetoA = /([A-Z])/;
@@ -46,12 +45,12 @@ function validatepass() {
     if (!password.value.match(especial))
         alert(' n foi deu especial')
     else
-    document.getElementById("especial").checked = true;
+        document.getElementById("especial").checked = true;
 
     if (!password.value.match(numeros))
         alert('coloca numero ai')
     else
-    document.getElementById("numero").checked = true;
+        document.getElementById("numero").checked = true;
 
     if (!password.value.match(alfabeto))
         alert('coloca letra ai')
@@ -61,5 +60,15 @@ function validatepass() {
     if (!password.value.match(alfabetoA))
         alert('coloca uma letra maior')
     else
-    document.getElementById("maiuscula").checked = true;
+        document.getElementById("maiuscula").checked = true;
 }      
+
+function confirm_pass (){
+    let password = document.getElementById("password")
+    let c_password = document.getElementById("c_password")
+
+    if (password.value == c_password.value)
+        enviar.disabled= false;
+    else 
+        enviar.disabled= true;
+}
