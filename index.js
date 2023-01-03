@@ -75,5 +75,5 @@ function confirm_pass (){
         warning_campo.innerHTML = ``}
     else {
         enviar.disabled= true;
-        warning_campo.innerHTML =`<p>*Senha incorreta</p>`}
+        warning_campo.innerHTML =`<p>*Senhas diferentes</p>`}
 }
