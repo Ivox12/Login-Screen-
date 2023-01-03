@@ -38,27 +38,27 @@ function validatepass() {
     `
 
     if (password.value.length < 8)
-        alert('Minimo 8 Digitos')
+        console.log('Minimo 8 Digitos')
     else
         document.getElementById("tamanho").checked = true;
 
     if (!password.value.match(especial))
-        alert(' n foi deu especial')
+        console.log(' n foi deu especial')
     else
         document.getElementById("especial").checked = true;
 
     if (!password.value.match(numeros))
-        alert('coloca numero ai')
+        console.log('coloca numero ai')
     else
         document.getElementById("numero").checked = true;
 
     if (!password.value.match(alfabeto))
-        alert('coloca letra ai')
+        console.log('coloca letra ai')
     else
         document.getElementById("minuscula").checked = true;
 
     if (!password.value.match(alfabetoA))
-        alert('coloca uma letra maior')
+        console.log('coloca uma letra maior')
     else
         document.getElementById("maiuscula").checked = true;
 }      
@@ -66,9 +66,14 @@ function validatepass() {
 function confirm_pass (){
     let password = document.getElementById("password")
     let c_password = document.getElementById("c_password")
+    let warning_campo = document.getElementById("warning_camp")
 
-    if (password.value == c_password.value)
+    pass_campo.style.display="none"
+
+    if (password.value == c_password.value){
         enviar.disabled= false;
-    else 
+        warning_campo.innerHTML = ``}
+    else {
         enviar.disabled= true;
+        warning_campo.innerHTML =`<p>*Senha incorreta</p>`}
 }
