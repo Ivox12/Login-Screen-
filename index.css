@@ -5,8 +5,11 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+      
 }
-
 
 .square {
     background-color: rgba(41, 41, 41, 0);
