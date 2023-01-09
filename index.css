@@ -121,6 +121,7 @@ body{
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 45%;
 }
 
 .log_camp {
@@ -134,6 +135,7 @@ body{
     float: left;
     color: rgba(8, 178, 245, 0.644);
     text-shadow: 0 0 .4em rgb(18, 18, 19), 0 0 0.8em rgb(144, 148, 156);
+    margin-right: 45%;
 
 }
 
@@ -175,11 +177,12 @@ body{
 .sub_camp > input {
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: gray;
+    color: #08b2f5a4;
     text-shadow: 0 0 0 1em rgb(62, 66, 73), 0 0 0.2em rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(8, 178, 245, 0.644);
     border-radius: 2%;
-    box-shadow: 0px 0px 2px 2px rgb(41, 39, 39);
+    box-shadow: 1px 1px 8px 1px rgba(8, 178, 245, 0.644);
     margin-top: 15%;
     padding: 8px 40px 8px 40px;
     margin-bottom: 15%;
