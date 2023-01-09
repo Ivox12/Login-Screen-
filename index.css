@@ -5,6 +5,12 @@ body{
     justify-content: center;
 }
 
+@media ( max-width: 850px ){
+    .square { 
+        height: 100% ;
+    }
+}
+
 .square {
     background-color: rgba(41, 41, 41, 0);
     text-align: center;
