@@ -7,11 +7,6 @@ body{
     align-items: center;
 }
 
-@media ( max-width: 850px ){
-    .square { 
-        height: 100% ;
-    }
-}
 
 .square {
     background-color: rgba(41, 41, 41, 0);
@@ -19,10 +14,13 @@ body{
     padding-top: 2%;
     padding-bottom: 4%;  
     border-radius: 2%;
+    min-width: 280px;
+    min-height: 400px;
     max-height: 450px;
     box-shadow: 10px 8px 40px 8px rgb(0, 0, 0);
     position: absolute;
     top: 25%;
+    height: 100%;
     box-sizing: border-box;
     overflow: hidden;
 }
