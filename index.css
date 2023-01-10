@@ -28,6 +28,14 @@ body{
     overflow: hidden;
 }
 
+.square > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .square span{
     position: absolute;
     display: block;
@@ -103,9 +111,6 @@ body{
 
 .pass_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 .pass_camp > input {
     float: left;
@@ -114,6 +119,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .pass_camp >input:focus {
@@ -129,9 +135,6 @@ body{
 
 .log_camp {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .log_camp > p {
@@ -149,6 +152,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.295);
+    min-width: 50%;
 }
 
 .log_camp >input:focus {
@@ -159,21 +163,21 @@ body{
     display: inline-grid;
 }
 
-.sub_camp a{
+#registro{
     text-decoration:none;
     color: rgba(255, 255, 255, 0.925);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.sub_camp a:hover{
+#registro:hover{
     color: grey;
 }
 
-.sub_camp a:active{
+#registro:active{
     color: white;
 }
 
-.sub_camp a:visited{
+#registro:visited{
     color: lightblue;
 }
 
