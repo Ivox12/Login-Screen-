@@ -1,3 +1,14 @@
+function telephoneMask() {
+    let tel = document.getElementById("tel").value;
+    let ddd = tel.slice(0,2);
+    let parte1 = tel.slice(2,7);
+    let parte2 = tel.slice(7,11);
+    let newTel = `(${ddd})${parte1}-${parte2}`
+
+    tel = newTel
+    console.log(tel)
+
+}
 
 function validatepass() {
     let password = document.getElementById("password")
